@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SWITCH</title>
+</head>
+<body>
+	<body style="background-color: lightgray;">
+
+
+Escribe un numero del 1 al 7: <br>
+<input id="numero" type="" name="">
+<button onclick="mostrar()"> Mostrar Dia</button>
+<br>
+<br>
+<div id="texto" style=" width: 30%; border: 1px solid black;" ></div>
+
+<script type="text/javascript">
+
+function mostrar(){
+
+let numero = document.getElementById("numero").value
+let leyenda = " "
+let div = document.getElementById("texto")
+
+switch (numero){
+
+case "1": leyenda = "Hoy es lunes" ; div.style.backgroundColor = "orange"; break;
+case "2": leyenda= "Hoy es martes"; div.style.backgroundColor = "lightblue" ; break;
+case "3": leyenda = "Hoy es miercoles"; div.style.backgroundColor = "pink" ; break;
+case "4": leyenda = "Hoy es jueves"; div.style.backgroundColor = "lightcoral" ; break;
+case "5": leyenda = "Hoy es viernes";div.style.backgroundColor = "yellow"; break;
+case "6": leyenda = "Hoy es sabado"; div.style.backgroundColor = "beige" ;break;
+case "7": leyenda = "Hoy es Domingo"; div.style.backgroundColor = "brown" ;break;
+default: leyenda = " No has seleccionado ningun numero del 1 al 7" ; div.style.backgroundColor = "white";
+
+}
+
+document.getElementById("texto").innerHTML = leyenda
+
+}	
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
